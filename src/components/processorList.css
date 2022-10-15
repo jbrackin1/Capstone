@@ -1,0 +1,36 @@
+/* 
+.image{ 
+    display: flex; 
+    flex-direction: column;
+    width: 10%;
+    height: 10%;   
+} */
+
+.text {
+    display: flex;
+    align-items: flex-end
+}
+
+
+.proctitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.procname {
+    display: flex;
+   align-items: center;
+   justify-content: center
+}
+
+.procdesc {
+    display: flex;
+    
+    justify-content:center;
+}
+
+.imgcss{
+   display: flex;
+   justify-content: center;
+}
