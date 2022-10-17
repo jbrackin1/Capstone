@@ -25,7 +25,6 @@ function NavBarComp() {
     </Nav.Link>
 
             <Nav.Link as={Link} to="/Processors" element={<Processors />}>Processors</Nav.Link>
-            <Nav.Link as={Link} to="./Cart" element={<Cart />}> Cart</Nav.Link>
             <NavDropdown title="More" id="basic-nav-dropdown">
               <NavDropdown.Item as={Link} to="/Farms" element={<Farms />}>Farms</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/Store" element={<Store />}>Store</NavDropdown.Item>
@@ -35,6 +34,7 @@ function NavBarComp() {
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
+            <Cart />
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -3,7 +3,7 @@ import {FiShoppingCart as CartIcon} from "react-icons/fi"
 import "./cart.css";
 
 //active show items
-import React from 'react'
+import React from 'react';
 
 function Cart() {
   return (
