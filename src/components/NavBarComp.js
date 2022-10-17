@@ -8,7 +8,9 @@ import {Link} from "react-router-dom";
 import Home from "./Home";
 import Farms from "./Farms";
 import Processors from "./ProcessorList";
-
+import Store from "./Store";
+import Upcoming from "./Upcoming";
+import Cart from "./Cart";
 
 function NavBarComp() {
   return (
@@ -18,23 +20,16 @@ function NavBarComp() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            
-          {/* <Link to="/Processors" element={<Processors />} />  */}
-          
-            
-  
-            {/* <Nav.Link href="#home">Home</Nav.Link>> */}
             <Nav.Link as={Link} to="/Home" element={<Home />} >
         Home
     </Nav.Link>
 
             <Nav.Link as={Link} to="/Processors" element={<Processors />}>Processors</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+            <Nav.Link as={Link} to="./Cart" element={<Cart />}> Cart</Nav.Link>
+            <NavDropdown title="More" id="basic-nav-dropdown">
+              <NavDropdown.Item as={Link} to="/Farms" element={<Farms />}>Farms</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/Store" element={<Store />}>Store</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="./Upcoming" element={<Upcoming />}>Upcoming Events</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
                 Separated link
