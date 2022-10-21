@@ -8,7 +8,7 @@
       table.string("name");
       table.string("description");
       table.string("image_url");
-      table.double("processing_rate")
+      table.float("processing_rate")
       table.timestamps(true, true); // Adds created_at and updated_at columns
     });
   };

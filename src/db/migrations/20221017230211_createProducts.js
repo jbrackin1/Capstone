@@ -7,7 +7,7 @@ exports.up = function(knex) {
         table.increments('product_id').primary() // sets product id as primary key
         table.string('name')
         table.string('description')
-        table.double('price')
+        table.float('price')
         table.string("image_url")
         table.integer('farm_id').unsigned().notNullable;
         table

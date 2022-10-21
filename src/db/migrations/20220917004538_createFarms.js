@@ -8,7 +8,7 @@ exports.up = function(knex) {
       table.string("name");
       table.string("description");
       table.string("image_url");
-      table.double("price_per_lb");
+      table.float("price_per_lb");
       table.timestamps(true, true); // Adds created_at and updated_at columns
     });
 };
